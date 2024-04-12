@@ -5,14 +5,14 @@ public class Person {
     private static String firstName; //to store the first name
     private static String lastName; //to store the second name
     private String address; //to store the address
-    private LocalDate birthdate; //to store the date of birth
+    protected LocalDate birthdate; //to store the date of birth //Mehmet Yiter I changed the access modifier to protected for using in the Doctor class
     private String phone; //to store the phone number
     private int age; //to store age
     
     //create a constructor with parameters
-    public Person(String firstName,String secondName, String address, LocalDate birthdate, String phone) {
+    public Person(String firstName,String lastName, String address, LocalDate birthdate, String phone) {
         Person.firstName = firstName;
-        Person.lastName = secondName;
+        Person.lastName = lastName;
         this.address = address;
         this.birthdate = birthdate;
         this.phone = phone;
